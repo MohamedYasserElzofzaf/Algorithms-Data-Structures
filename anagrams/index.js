@@ -10,4 +10,8 @@
 
 function anagrams(stringA, stringB) {}
 
+function buildcharMap(str) {
+    const charMap = {};
+}
+
 module.exports = anagrams;
