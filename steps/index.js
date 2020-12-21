@@ -3,7 +3,7 @@
 // The function should console log a step shape
 // with N levels using the # character.  Make sure the
 // step has spaces on the right hand side!
-// --- Examples
+// ---( Examples
 //   steps(2)
 //       '# '
 //       '##'
@@ -25,6 +25,12 @@ function steps(n, rows = 0, stair = "") {
         console.log(stair);
         return steps(n, rows + 1);
     }
+    if (stair.length <= rows) {
+        stair += "#";
+    } else {
+        stair += " ";
+    }
+    steps(n, rows, stair);
 }
 module.exports = steps;
 
