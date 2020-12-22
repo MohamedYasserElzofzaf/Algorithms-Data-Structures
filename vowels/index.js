@@ -10,9 +10,11 @@
 // method 1
 function vowels(str) {
     let count = 0;
-    //let x = str.split("");
+    // const checker = "aeiou";
+    const checker = ["a", "e", "i", "o", "u"];
     for (let i of str.toLowerCase()) {
-        if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
+        // if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
+        if (checker.includes(i)) {
             count++;
         }
     }
