@@ -57,13 +57,13 @@ class LinkedList {
             this.head = null;
             return;
         }
-        let perevious = this.head;
+        let previous = this.head;
         let node = this.head.next;
         while (node.next) {
-            perevious = node;
+            previous = node;
             node = node.next;
         }
-        perevious.next = null;
+        previous.next = null;
     }
 }
 
