@@ -94,6 +94,7 @@ class LinkedList {
         if (!previous || !previous.next) return;
         previous.next = previous.next.next;
     }
+    insertAt() {}
 }
 
 module.exports = { Node, LinkedList };
